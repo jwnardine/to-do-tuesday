@@ -9,7 +9,8 @@
         <p>Here are the tasks:</p>
         <ul>
             {% for task in tasks %}
-                <li>{{ task.getDescription }}</li>
+                <li>{{ task.getDescription }} Due Date: {{ task.getDueDate }}</li>
+
             {% endfor %}
         </ul>
     {% endif %}
