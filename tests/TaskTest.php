@@ -25,15 +25,15 @@
         function test_getId()
         {
             //Arrange
-            $name = "Home stuff"
+            $name = "Home stuff";
             $id = null;
             $test_category = new Category($name, $id);
             $test_category->save();
 
             $description = "Wash the dog";
-            $category_id = $test_cateogry->getId();
+            $category_id = $test_category->getId();
             $test_Task = new Task($description, $id, $category_id);
-            $test_task->save();
+            $test_Task->save();
 
             //Act
             $result = $test_Task->getId();
@@ -53,7 +53,7 @@
             $description = "Wash the dog";
             $category_id = $test_category->getId();
             $test_task = new Task($description, $id, $category_id);
-            $test_tesk->save();
+            $test_task->save();
 
             //Act
             $result = $test_task->getCategoryId();
@@ -65,7 +65,7 @@
        function test_save()
        {
            //Arrange
-           $name = "Home stuff"
+           $name = "Home stuff";
            $id = null;
            $test_category = new Category($name, $id);
            $test_category->save();
